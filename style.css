@@ -1,13 +1,12 @@
 * {
-    /* o "*" significa "universal", significa que vai aplicar isso em todos os elementos */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 :root {
     --text-color: white;
-    /*Criando uma variável no css --nome_da_variavel: "valor_recebido"*/
     --bg-url: url(./assets/bg-mobile.jpg);
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.05);
@@ -16,6 +15,7 @@
     --switch-bg-image: url(./assets/MoonStars.svg);
     
 }
+
 
 .light_mode {
     --text-color: black;
@@ -27,47 +27,26 @@
     --switch-bg-image: url(./assets/Sun.svg);
 }
 
-/*body*/
-body {
-    /* 
-    
-    background-color: black;
-    background-image: url(./); -- > 
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    
-    Toda essa parte superior pode se resumir na parte seguinte (shorthand/atalho):*/
 
-    /*background: color image repeat position/size */
+body {
     background: var(--bg-url)  no-repeat top center/cover;
     height: 100vh;   
 }
 
+
 body * {
-    /* o "*" depois do "body" significa "universal", significa que vai aplicar isso em todo o corpo/body */
         font-family: "Kanit", sans-serif;
         font-weight: 400;
         font-style: normal;
         color: var(--text-color);
-        /*ativando a variante do css: var(nome_da_variavel)*/
 }
 
-#container {
 
+#container {
     width: 100%;
     max-width: 588px;
-    /* 
-    margin-right: auto;
-    margin-left: auto; 
-    
-    Esses dois sao responsaveis por deixar a "caixa" (div) no centro e pode ser resumida na seguinta propriedade: */
     margin: auto;
-    /* display: block center; */
-    /* "display: block" deixa a "caixa" (div) bloqueada, usando todo o espaço da tela (horizontalmente), mesmo que o texto nao precise de todo o espaço */
-    /* O display pode ser "inline" ou "block", mas depende da propriedade. "Div", por exemplo é block, enquando "img" é inline */
     padding: 0 24px;
-
 }
 
 
@@ -77,9 +56,11 @@ body * {
     padding: 24px;
 }
 
+
 #profile img {
     width: 112px;
 }
+
 
 #profile p {
     font-weight: 500;
@@ -87,15 +68,14 @@ body * {
     margin-top: 8px;
 }
 
+
 /*switch*/
 #switch {
     position: relative;
-    /*position: relative vai relativizar o absolute dos itens dentro dele,
-    no caso, o botao*/
     width: 64px;
-
     margin: 4px auto;
 }
+
 
 #switch button {
     width: 32px;
@@ -103,27 +83,24 @@ body * {
     background: white var(--switch-bg-image) no-repeat center;
     border: 0;
     border-radius: 50%;
-
     position: absolute;
-    /*position: absolute é para fazer uma sobreposição dos elementos
-    e o z-index define o "andar", posicionando com o top, left, right, botton*/
     top: 50%;
     left: 0;
     z-index: 1;
     transform: translateY(-50%);
-
     animation: slide-back 0.3s;
 }
 
+
 .light_mode #switch button {
-    /* right: 0;
-    left: initial; */
     animation: slide-in 0.3s forwards;
 }
+
 
 #switch button:hover {
     outline: 5px solid var(--highlight-color);
 }
+
 
 #switch span {
     display: block;
@@ -134,7 +111,6 @@ body * {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 9999px;
-
 }
 
 
@@ -155,23 +131,20 @@ ul li a {
     background: var(--surface-color);
     border: 1px solid var(--stroke-color);
     border-radius: 8px;
-
     backdrop-filter: blur (4px);
-    -webkit-backdrop-filter: blur(4px);
-    /* esse webkit é para que seja compativel com algumas versoes web... para verificar, usar o site "caniuse.com" */
-    
+    -webkit-backdrop-filter: blur(4px);    
     text-decoration: none;
     font-weight: 400;
-
     transition: all 0.2s;
 }
 
+
 /*pseudo-selector*/
-/* aqui é quando se passa o mouse em cima e há uma interação com o botão */
 ul li a:hover {
     background: var(--surface-color-hover);
     border: 1.5px solid var(--text-color);
 }
+
 
 /* social links */
 #social_links {
@@ -186,15 +159,15 @@ ul li a:hover {
     align-items: center;
     justify-content: center;
     padding: 10px;
-
     transition: all 0.2s;
     border-radius: 50%;
-
 }
+
 
 #social_links a:hover {
     background: var(--highlight-color);
 }
+
 
 /*footer*/
 #quote {
@@ -213,43 +186,17 @@ ul li a:hover {
 }
 
 /* media queries */
-/* For small devices such as phones */ 
-/*
-@media (max-width: 767px) { 
+@media (min-width: 700px) { 
     :root {
-        --bg-url: url(./assets/bg-mobile.jpg); 
-       }
-       .light_mode {
-        --bg-url: url(./assets/bg-mobile-light.jpg);
-       } 
-  } 
-   
-  /* For medium devices such as tablets */ 
-  /*
-  @media (min-width: 768px) and (max-width: 991px) { 
-    :root {
-        --bg-url: url(./assets/bg-mobile.jpg); 
-       }
-       .light_mode {
-        --bg-url: url(./assets/bg-mobile-light.jpg);
-       } 
-  } 
-
-  /* For larger devices such as desktops */
-   
-  @media (min-width: 700px) { 
-        :root {
          --bg-url: url(./assets/bg-desktop.jpg); 
-        }
-        .light_mode {
+    }
+    .light_mode {
          --bg-url: url(./assets/bg-desktop-light.jpg);
-        }
-    } 
-   
+    }
+} 
 
 
 /* animations */
-
 @keyframes slide-in {
     from {
         left: 0;
