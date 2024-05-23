@@ -120,14 +120,14 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding: 24px 0;
+    padding: 16px 0;
 }
 
 ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 16px;
+    padding: 10px 8px;
     background: var(--surface-color);
     border: 1px solid var(--stroke-color);
     border-radius: 8px;
@@ -150,7 +150,7 @@ ul li a:hover {
 #social_links {
     display: flex;
     justify-content: center;
-    padding: 24px 0;
+    padding: 16px 0;
     font-size: 24px;
 }
 
