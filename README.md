@@ -30,7 +30,7 @@ This project was developed with the following tools:
 
 This project is a link tree to use as an online "business card".
 
-- [Access the finished project online](https://maykbrito.github.io/devlinks)
+- [Access the finished project online](https://giacomosalsano.com)
 
 
 ## :memo: License
