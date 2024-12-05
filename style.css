@@ -49,6 +49,11 @@ body * {
     padding: 0 24px;
 }
 
+#counter {
+    padding: 10px 0px;
+    text-align: center;
+}
+
 
 /*profile*/
 #profile {
