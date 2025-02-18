@@ -1,7 +1,7 @@
 <h1 align="center"> Link Tree for Social Media </h1>
 
 <p align="center">
-Project developed by Rocketseat to teach WEB technologies. <br/>
+Project developed during a <strong>Rocketseat</strong> course to learn WEB technologies. <br/>
 </p>
 
 <p align="center">
@@ -11,7 +11,7 @@ Project developed by Rocketseat to teach WEB technologies. <br/>
   <a href="#4.-use-case-view">Use Case View</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#5.-technical-implementation">Technical Implementation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#6.-features-and-functionalities">Features and Functionalities</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#7.-user-interaction">User Interaction</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#7.-user-interaction">User Interaction</a>
 </p>
 
 <p align="center">
