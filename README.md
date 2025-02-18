@@ -20,7 +20,7 @@ Project developed during a <strong>Rocketseat</strong> course to learn WEB techn
 
 <br>
 
-## General Information
+## 1. General Information
 
 This project was developed with the following tools:
 
@@ -30,7 +30,7 @@ This project was developed with the following tools:
 - Run the Project: Open the `index.html` file in a web browser.
 
 
-## General Description
+## 2. General Description
 The **Link Tree for Social Media** is a simple personal webpage that aggregates various social media and portfolio links. The webpage features a profile picture, interactive social media icons, a visit counter, and a light/dark mode toggle to improve the user experience.
 
 ### 2.1 Purpose
