@@ -5,13 +5,14 @@ Project developed during a <strong>Rocketseat</strong> course to learn WEB techn
 </p>
 
 <p align="center">
-  <a href="#1.-general-information">General Information</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#2.-general-description">General Description</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#3.-design-overview">Design Overview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#4.-use-case-view">Use Case View</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#5.-technical-implementation">Technical Implementation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#6.-features-and-functionalities">Features and Functionalities</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#7.-user-interaction">User Interaction</a>
+  <a href="#general-information">General Information</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#general-description">General Description</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#design-overview">Design Overview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#use-case-view">Use Case View</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#technical-implementation">Technical Implementation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#features-and-functionalities">Features and Functionalities</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#user-interaction">User Interaction</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#project">Final Project</a>
 </p>
 
 <p align="center">
@@ -20,7 +21,7 @@ Project developed during a <strong>Rocketseat</strong> course to learn WEB techn
 
 <br>
 
-## 1. General Information
+<h2 id="general-information">1. General Information</h2>
 
 This project was developed with the following tools:
 
@@ -29,8 +30,8 @@ This project was developed with the following tools:
 - Technologies Used: HTML, CSS, JavaScript, Figma, GitHub;
 - Run the Project: Open the `index.html` file in a web browser.
 
+<h2 id="general-description">2. General Description</h2>
 
-## 2. General Description
 The **Link Tree for Social Media** is a simple personal webpage that aggregates various social media and portfolio links. The webpage features a profile picture, interactive social media icons, a visit counter, and a light/dark mode toggle to improve the user experience.
 
 ### 2.1 Purpose
@@ -47,13 +48,15 @@ The system includes the following functionalities:
 - Social media icons that link to external platforms like Instagram, LinkedIn, SoundCloud, GitHub, etc.;
 - An inspiring quote displayed at the bottom of the page.
 
-## 3. Design Overview
+<h2 id="design-overview">3. Design Overview</h2>
+
 - The design of the webpage is minimalist with a strong focus on user experience;
 - The layout is centered, with a profile image, username, and various links arranged vertically;
 - The light/dark mode toggle is positioned above the links, providing easy access to change the appearance;
 - Social media icons are presented as a grid at the bottom, giving users quick access to external profiles.
 
-## 4. Use Case View
+<h2 id="use-case-view">4. Use Case View</h2>
+
 ### Use Cases:
 1. Toggle Light/Dark Mode:
     - Input: User clicks on the light/dark mode switch;
@@ -64,7 +67,8 @@ The system includes the following functionalities:
     - Output: The corresponding external website opens in a new tab.
 
 
-## 5. Technical Implementation
+<h2 id="technical-implementation">5. Technical Implementation</h2>
+
 The **Link Tree for Social Media** consists of three main files:
 
 - `index.html`: The main HTML structure, which defines the layout, content, and structure of the webpage. It also includes links to external stylesheets and scripts.
@@ -87,20 +91,25 @@ The **Link Tree for Social Media** consists of three main files:
 ### 5.3 JavaScript Interactivity
 - The `script.js` file defines the `toggleMode` function, which switches the page between light and dark modes by toggling the `light_mode` class on the HTML element.
 
-## 6. Features and Functionalities
+<h2 id="features-and-functionalities">6. Features and Functionalities</h2>
+
 - Light/Dark Mode: Toggle between light and dark themes by clicking the button on the page;
 - Visit Links: Direct users to the respective social media or portfolio websites;
 - Social Media Icons: Provide quick access to all my social media platforms like Instagram, LinkedIn, GitHub, etc;
 - Visit Counter: Displays the number of times the page has been visited, using [StarHits](https://hits.seeyoufarm.com/) to track the visit count;
 - Quote: “**_Ad meliora et ad maiora semper_**” is a Latin phrase that translates to "_always towards better and greater things_". It is a reminder to keep moving forward and strive for greater dreams.
 
-## 7. User Interaction
+
+<h2 id="user-interaction">7. User Interaction</h2>
+
 - Users can toggle between light and dark mode using the button located at the top of the page;
 - Clicking on any of the links will open the respective external website in a new browser tab;
 - Social media icons are interactive and will open in a new tab when clicked;
 - The visit counter dynamically updates the number of visits.
 
-## 8. Deployment and Usage
+
+<h2 id="deployment-and-usage">8. Deployment and Usage</h2>
+
 To use the **Link Tree for Social Media** , follow these steps:
 
 - Download or clone the repository;
@@ -109,8 +118,9 @@ To use the **Link Tree for Social Media** , follow these steps:
 - Click on any of the links to visit external websites;
 - Social media icons can be used to navigate to various social platforms;
 
-## 9. Project
 
-- [Access the finished project online](https://giacomosalsano.com)
+<h2 id="project">9. Final Project</h2>
+
+- <a href="https://giacomosalsano.com" target="_blank">Access the final project online</a>
 
 
