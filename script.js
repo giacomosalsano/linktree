@@ -1,4 +1,4 @@
-import { config } from './config.js';
+// import { config } from './config.js';
 
 // const BIN_ID = config.JSONBIN_BIN_ID;
 // const API_KEY = config.JSONBIN_API_KEY;
