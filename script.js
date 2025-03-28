@@ -3,10 +3,10 @@
 // const BIN_ID = config.JSONBIN_BIN_ID;
 // const API_KEY = config.JSONBIN_API_KEY;
 
-const BIN_ID = process.env.JSONBIN_BIN_ID;
-const API_KEY = process.env.JSONBIN_API_KEY;
+const BIN_ID = JSONBIN_BIN_ID;
+const API_KEY = JSONBIN_API_KEY;
 
-//Função de toggle
+// Função de toggle
 export function toggleMode() {
     const html = document.documentElement
     html.classList.toggle('light_mode')
