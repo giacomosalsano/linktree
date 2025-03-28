@@ -1,10 +1,8 @@
-// import { config } from './config.js';
+import { config } from './config.js';
 
-// const BIN_ID = config.JSONBIN_BIN_ID;
-// const API_KEY = config.JSONBIN_API_KEY;
+const BIN_ID = config.JSONBIN_BIN_ID;
+const API_KEY = config.JSONBIN_API_KEY;
 
-const BIN_ID = JSONBIN_BIN_ID;
-const API_KEY = JSONBIN_API_KEY;
 
 // Função de toggle
 export function toggleMode() {
