@@ -1,3 +1,5 @@
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +9,7 @@
 
 :root {
     --text-color: white;
-    --bg-url: url(./assets/bg-mobile.jpg);
+    --bg-url: url(./assets/bg-mobile-resized.jpg);
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.05);
     --surface-color-hover: rgba(255, 255, 255, 0.02);
@@ -19,7 +21,7 @@
 
 .light_mode {
     --text-color: black;
-    --bg-url: url(./assets/bg-mobile-light.jpg);
+    --bg-url: url(./assets/bg-mobile-light-resized.jpg);
     --stroke-color: rgba(0, 0, 0, 0.5);
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -31,6 +33,7 @@
 body {
     background: var(--bg-url)  no-repeat top center/cover;
     height: 100vh;   
+    background-repeat: repeat-y; // Temporario até arrumar outra imagem que seja melhor...
 }
 
 
@@ -49,16 +52,11 @@ body * {
     padding: 0 24px;
 }
 
-#counter {
-    padding: 10px 0px;
-    text-align: center;
-}
-
 
 /*profile*/
 #profile {
     text-align: center;
-    padding: 24px;
+    padding: 12px;
 }
 
 
@@ -70,7 +68,7 @@ body * {
 #profile p {
     font-weight: 500;
     line-height: 24px;
-    margin-top: 8px;
+    margin-top: 6px;
 }
 
 
@@ -124,15 +122,17 @@ ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
     padding: 16px 0;
+    max-width: 380px;
+    margin: auto;
 }
 
 ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 8px;
+    padding: 8px 6px;
     background: var(--surface-color);
     border: 1px solid var(--stroke-color);
     border-radius: 8px;
@@ -165,7 +165,7 @@ ul li a:hover {
     justify-content: center;
     padding: 10px;
     transition: all 0.2s;
-    border-radius: 50%;
+    border-radius: 9999px;
 }
 
 
@@ -175,28 +175,84 @@ ul li a:hover {
 
 
 /*footer*/
+
+/* #counter {
+    padding: 10px 0px;
+    text-align: center;
+} */
+
+#like-button-div {
+    padding: 6px 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#like-button-div i {
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#like-button-div button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--stroke-color);
+    background: var(--surface-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#like-button-div button:hover:not(:disabled) {
+    background: var(--surface-color-hover);
+    border: 1.5px solid var(--text-color);
+}
+
+#like-button-div button:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+
+#heart-icon {
+  margin-top: 2px;
+}
+
+#heart-icon.liked {
+    opacity: 0.8;
+    color: #ff6251 !important;
+}
+
+
+
 #quote {
     text-decoration-color: var(--text-color);
-    padding: 10px 0;
+    padding: 8px 0;
     text-align: center;
     font-style: italic;
     font-size: 15px;
 }
 
 #footer {
-    padding: 16px 0;
+    padding: 8px 0;
     text-align: center;
     font-size: 11px;
     
 }
 
 /* media queries */
-@media (min-width: 600px) { 
+@media (min-width: 900px) { 
     :root {
-         --bg-url: url(./assets/bg-desktop.jpg); 
+         --bg-url: url(./assets/bg-desktop-resized.jpg); 
     }
     .light_mode {
-         --bg-url: url(./assets/bg-desktop-light.jpg);
+         --bg-url: url(./assets/bg-desktop-light-resized.jpg);
     }
 } 
 
