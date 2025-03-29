@@ -34,11 +34,24 @@
             <p>@giacomosalsano</p>
         </div>
 
-        <div 
+        <!-- <div 
             id="switch" 
             onclick="window.toggleMode()">
             <button> </button>
             <span> </span>
+        </div> -->
+
+        <div class="container">
+            <label class="toggle" for="switch">
+                <input id="switch" class="input" type="checkbox" onclick="window.toggleMode()">
+                <div class="icon icon--moon">
+                    <img src="./assets/mini-moon.svg" alt="moon icon">
+                </div>
+            
+                <div class="icon icon--sun">
+                    <img src="./assets/mini-sun.svg" alt="sun icon">
+                </div>
+            </label>
         </div>
 
         <ul id="ul_links">
