@@ -139,10 +139,12 @@ body * {
   }
   
   .icon--moon {
+    margin-top: 2px;
     transition-delay: 200ms;
   }
   
   .icon--sun {
+    margin-top: 2px;
     transform: scale(0);
   }
   
